@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+<!--    <link rel="stylesheet" href="../css/06-tables.css">-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>ตารางสามารถกำหนดสร้างขึ้นด้วยแท็ก &lt;table&gt;</h1>
+        
+        <!-- attribute border มีไว้กำหนดเส้นขอบของตาราง แต่ควรใช้ css กำหนดดีกว่า -->
+        <table border="1">
+            <!-- แท็ก <tr> เป็นตัวกำหนดแถวแนวนอนของตาราง -->
+            <tr>
+                <!-- <th> และ <td> กำหนดคอลัมในแต่ละแถว  -->
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        
+        <h2>ตารางและ attributes colspan &amp; rowspan</h2>
+        <table border="1">
+            <!-- แท็ก caption เป็นตัวกำหนด caption บนหัวตาราง -->
+            <caption>Let's see how colspan and rowspan work.</caption>
+            <!-- thead, tfoot และ tbody มีไว้เพื่อกำหนดพื้นที่ของตาราง เช่น thead หมายถึงพื้นที่ส่วนหัวของตาราง เป็นต้น -->
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td row colspan="4">Vat 7%</td>
+                    <td>93.8 ฿</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Sum</td>
+                    <td>40</td>
+                    <td>1433.8 ฿</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Pen</td>
+                    <td>Horse</td>
+                    <td>12</td>
+                    <td rowspan="2">20</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <td>Color Pencil</td>
+                    <td>Farbe Castle</td>
+                    <td>55</td>
+                    <!-- <td>20</td> -->
+                    <td>1100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

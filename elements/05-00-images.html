@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!--    <link rel="stylesheet" href="../css/05-00-images.css">-->
+</head>
+<body>
+    <h1>ในบทนี้เนื้อหาเกี่ยวกับแท็ก img และ attributes ต่างๆ</h1>
+    <img class="thumb" src="../images/html-tag-icon.png" alt="html tag icon">
+    <img class="thumb" src="../images/css-icon.png" alt="css icon" title="CSS Course: how to design a webpage">
+
+    <h2>Image Map :</h2>
+    <img class="map" src="../images/html-css-js.jpg" usemap="#image-map">
+    <map name="image-map">
+        <area target="_self" alt="HTML icon" title="HTML icon" href="05-01-map-html.html" coords="53,144,187,143,176,261,121,275,64,260" shape="poly">
+        <area target="_self" alt="CSS icon" title="CSS icon" href="05-02-map-css.html" coords="248,146,382,147,369,262,315,276,259,260" shape="poly">
+        <area target="_self" alt="JS icon" title="JS icon" href="05-03-map-js.html" coords="439,146,573,145,560,261,508,277,452,260" shape="poly">
+    </map>
+
+    <h2>The Picture Element :</h2>
+    <picture>
+        <source class="img-border" media="(min-width: 1400px)" srcset="../images/sunflower-big.jpg">
+        <source class="img-border" media="(min-width: 530px)" srcset="../images/sunflower-medium.jpg">
+        <img class="img-border" src="../images/sunflower-small.jpg" alt="Flowers" style="width:auto">
+    </picture>
+</body>
+</html>

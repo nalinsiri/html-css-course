@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Webdesign, HTML5">
+<meta name="description" content="HTML und CSS3 Webseite">
+<title>ฟามไก่กกไทร</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/fadeSlideShow.js"></script>
+<script>
+$(document).ready(function(){
+    $('#slideshow').fadeSlideShow({
+			width:913,
+			height: 479,
+			PlayPauseElement: false,
+			ListElement: false,
+			allowKeyboardCtrl: false,
+			interval: 8000
+		});
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<nav>
+    	<ul>
+        	<li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">ร้านค้าขายไข่</a></li>
+            <li><a href="#">อาหารอินทรีย์</a></li>
+            <li><a href="#">วิธีเลี้ยงและดูแล</a></li>
+            <li><a href="#">คำถามที่พบบ่อย</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul><br class="clear">
+        <h1 id="branding">ฟามไก่กกไทร</h1>
+    </nav>
+    
+    <header>
+    	<ul id="slideshow">
+        	<li><img src="../images/slide-3.jpg" width="913" height="479" alt=""></li>
+            <li><img src="../images/slide-2.jpg" width="913" height="479" alt=""></li>
+        	<li>
+            	<img src="../images/slide-1a.png" width="268" height="86" alt="head" id="slideATop">
+            	<img src="../images/slide-1.jpg" width="913" height="479" alt="Slide">
+            </li>
+        </ul>
+    </header>
+    
+    <div class="main" role="main">
+    	<article>
+        	<h2>ยินดีตอนรับผู้มาเยือน</h2>
+			<p>เมจิค โก๊ะว้อยมิวสิคเฟรช วีไอพีเอ็นเตอร์เทนยะเยือก พงษ์เที่ยงวัน เหมยไฟต์ เพลย์บอยแพทยสภาแอคทีฟทีวี แฟ็กซ์เปโซไนน์ควีน เกจิซีเรียสใช้งาน ล็อตเซอร์แซ็กโซโฟนพาสเจอร์ไรส์เวิร์ลด์ แฮปปี้ไง ภควัมบดีม้าหินอ่อนแชมเปี้ยนฮัลโหล คาเฟ่สเตชัน อพาร์ตเมนต์เยลลี่แทงกั๊กแคป ซูเอี๋ยโปรดักชั่น เบนโลอึ้มนรีแพทย์ เอฟเฟ็กต์ <a href="#">อ่านเพิ่มเติม</a></p>
+           <p>เมจิค โก๊ะว้อยมิวสิคเฟรช วีไอพีเอ็นเตอร์เทนยะเยือก พงษ์เที่ยงวัน เหมยไฟต์ เพลย์บอยแพทยสภาแอคทีฟทีวี แฟ็กซ์เปโซไนน์ควีน เกจิซีเรียสใช้งาน ล็อตเซอร์แซ็กโซโฟนพาสเจอร์ไรส์เวิร์ลด์ แฮปปี้ไง ภควัมบดีม้าหินอ่อนแชมเปี้ยนฮัลโหล คาเฟ่สเตชัน อพาร์ตเมนต์เยลลี่แทงกั๊กแคป ซูเอี๋ยโปรดักชั่น เบนโลอึ้มนรีแพทย์ เอฟเฟ็กต์ <a href="#">อ่านเพิ่มเติม</a></p>
+        </article>
+        
+        <aside class="right">
+        	<h3>วีดีโอ</h3>
+			<img src="../images/video.jpg" alt="video" width="259" height="160"><br>
+			<a href="#">คลิกเพือดูวีดีโออื่นๆ</a>
+        </aside><br class="clear">
+        
+        <aside>
+			<h3>ไก่สาว &amp; ลูกเจี๊ยบ</h3>
+			<div class="imgSpace"><img src="../images/chicken_chick.png" alt="chicken and chick" width="237" height="207"></div>
+			<p>ไฮกุภารตะตัวตนเทรนด์แทคติค ท็อปบูต ปฏิสัมพันธ์ แรงผลักเทเลกราฟคัตเอาต์พลานุภาพ แกรนด์รีโมท บึ้มเคสล็อต โบว์ลิ่งพรีเมียมออร์แกนิคสตาร์ทตัวเอง จูน อึมครึมแพนดามั้งทับซ้อนกราวนด์ วาไรตี้ก่อนหน้าเห่ย</p>
+			<a href="#">อ่านเพิ่มเติม</a>
+		</aside>
+		<aside>
+			<h3>ไข่ไก่</h3>
+			<div class="imgSpace"><img src="../images/eggs.png" alt="eggs" width="263" height="188"></div>
+			<p>เทียมทานวิวเลกเชอร์ วอเตอร์ปูอัดพุทธศตวรรษฮองเฮาคอรัปชั่น ดยุคแพทยสภา เบิร์นโรแมนติกสะบึมส์รีสอร์ต มลภาวะ มิลค์ปิยมิตรแจ็กเก็ตโซนี่ แพกเกจ มาร์จินจัมโบ้รีโมทเกมส์สเกตช์ มิลค์คอลเล็กชั่นเดโม คณาญาติแอปเปิล</p>
+			<a href="#">อ่านเพิ่มเติม</a>
+		</aside>
+		<aside class="last">
+			<h3>อาหารและยา</h3>
+			<div class="imgSpace"><img src="../images/feed.png" alt="feed" width="286" height="191"></div>
+			<p>บาบูนแคมปัสว้อดก้าแชมปิยอง ปิยมิตรเยนฮีโร่ โหงวโซนโง่เขลาช็อปปิ้งโครนา อริยสงฆ์แอร์บึ้มเมี่ยงคำลิมูซีน บร็อกโคลีสปายดีลเลอร์เยนยาวี แชมเปญคอลัมนิสต์ซ้อ พลาซ่าหมวย ลาเต้ กราวนด์วีน โลชั่นเอ๋แชเชือนตุ๊ด</p>
+			<a href="#">อ่านเพิ่มเติม</a>
+		</aside><br class="clear">
+    </div>
+</div>
+
+<footer>
+	<div class="wrapper">
+    	<address>
+			<h4>กกไทรฟาร์มไก่ไข่</h4>
+			<p>6074 <br>
+			Watika St 47<br>
+			สักทีบนโลกใบนี้</p>
+		</address>
+		<address>
+			<h4 class="textHidden">Kontaktdaten</h4>
+			<h5>โทร.</h5> (05 51) 12345678<br>
+			<h5>E-Mail</h5> info@chickenfarm.com<br>
+			<h5>Web</h5> www.chickenfarm.com<br>
+		</address>
+        <div class="social">
+			<a href="#" id="fb" class="badge">Facebook</a>
+			<a href="#" id="twitter" class="badge">Twitter</a><br>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

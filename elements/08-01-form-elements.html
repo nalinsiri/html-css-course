@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements</title>
+    <link rel="stylesheet" href="../css/08--00-forms.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>ส่วนต่างๆของแบบฟอร์ม</h1>
+        <form action="#" method="get">
+            <label for="fname">Name :</label>
+            <input id="fname" type="text" name="fname">
+            <label><input type="radio" name="gender" value="man">Man</label>
+            <label><input type="radio" name="gender" value="woman">Woman</label>
+            <br>
+            <label>Nationality :</label>
+            <select name="nation" id="nation">
+                <option value="Thai">Thai</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Laos">Laos</option>
+                <option value="Malaysia">Malaysia</option>
+            </select><br>
+            <label for="">Message :</label><br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <label for="language">Favourite Language :</label>
+            <input type='text' name="language">
+            <input type="submit" value="ส่งข้อความ">
+        </form>
+    </div>
+</body>
+</html>
